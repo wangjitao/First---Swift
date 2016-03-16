@@ -20,10 +20,14 @@ class MainTabBarController: UITabBarController {
 
         // Do any additional setup after loading the view.
 
-        wwchatVC.navigationItem.title = "微信"
-        addressListVC.navigationItem.title = "通讯录"
-        findVC.navigationItem.title = "发现"
-        myVC.navigationItem.title = "我"
+//        wwchatVC.navigationItem.title = "微信"
+//        addressListVC.navigationItem.title = "通讯录"
+//        findVC.navigationItem.title = "发现"
+//        myVC.navigationItem.title = "我"
+        wwchatVC.titleStr = "微信"
+        addressListVC.titleStr = "通讯录"
+        findVC.titleStr = "发现"
+        myVC.titleStr = "我"
         
         wwchatVC.tabBarItem.title = "微信"
         addressListVC.tabBarItem.title = "通讯录"

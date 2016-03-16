@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBar = MainTabBarController()
         self.window?.rootViewController = tabBar
         self.window?.makeKeyAndVisible()
+        
         return true
     }
 
