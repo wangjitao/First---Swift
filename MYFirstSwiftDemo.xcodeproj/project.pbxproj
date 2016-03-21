@@ -20,6 +20,10 @@
 		6BDB8E331C99057C00F74190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDB8E311C99057C00F74190 /* LaunchScreen.storyboard */; };
 		6BDB8E3E1C99057C00F74190 /* MYFirstSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB8E3D1C99057C00F74190 /* MYFirstSwiftDemoTests.swift */; };
 		6BDB8E491C99057C00F74190 /* MYFirstSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB8E481C99057C00F74190 /* MYFirstSwiftDemoUITests.swift */; };
+		6BE726431C9BB3A500E4F78C /* AddressListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE726411C9BB3A500E4F78C /* AddressListCell.swift */; };
+		6BE726441C9BB3A500E4F78C /* AddressListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE726421C9BB3A500E4F78C /* AddressListCell.xib */; };
+		6BE726461C9BB41100E4F78C /* AddressListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE726451C9BB41100E4F78C /* AddressListModel.swift */; };
+		6BE726481C9BC97D00E4F78C /* searchBarTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE726471C9BC97D00E4F78C /* searchBarTextFiled.swift */; };
 		E41340615B9B43542EC45CF0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F403B0CC824B82CDA767C007 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +64,10 @@
 		6BDB8E441C99057C00F74190 /* MYFirstSwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYFirstSwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDB8E481C99057C00F74190 /* MYFirstSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYFirstSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		6BDB8E4A1C99057C00F74190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE726411C9BB3A500E4F78C /* AddressListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListCell.swift; sourceTree = "<group>"; };
+		6BE726421C9BB3A500E4F78C /* AddressListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListCell.xib; sourceTree = "<group>"; };
+		6BE726451C9BB41100E4F78C /* AddressListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListModel.swift; sourceTree = "<group>"; };
+		6BE726471C9BC97D00E4F78C /* searchBarTextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchBarTextFiled.swift; sourceTree = "<group>"; };
 		778A9290282423E1CF8779EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		79CE80613EEB6AA66A23BAFA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F403B0CC824B82CDA767C007 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +176,7 @@
 		6BDB8E571C99331200F74190 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				6BE726401C9BB3A500E4F78C /* AddressList */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -186,6 +195,7 @@
 		6BDB8E591C99331200F74190 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6BE7263E1C9BB2BA00E4F78C /* AdressList */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +206,24 @@
 				6BB945771C9934C1007E8C09 /* MainTabBarController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		6BE7263E1C9BB2BA00E4F78C /* AdressList */ = {
+			isa = PBXGroup;
+			children = (
+				6BE726451C9BB41100E4F78C /* AddressListModel.swift */,
+			);
+			path = AdressList;
+			sourceTree = "<group>";
+		};
+		6BE726401C9BB3A500E4F78C /* AddressList */ = {
+			isa = PBXGroup;
+			children = (
+				6BE726411C9BB3A500E4F78C /* AddressListCell.swift */,
+				6BE726421C9BB3A500E4F78C /* AddressListCell.xib */,
+				6BE726471C9BC97D00E4F78C /* searchBarTextFiled.swift */,
+			);
+			path = AddressList;
 			sourceTree = "<group>";
 		};
 		E5AF53DC026EF1B50F8E2536 /* Pods */ = {
@@ -315,6 +343,7 @@
 			files = (
 				6BDB8E331C99057C00F74190 /* LaunchScreen.storyboard in Resources */,
 				6BDB8E301C99057C00F74190 /* Assets.xcassets in Resources */,
+				6BE726441C9BB3A500E4F78C /* AddressListCell.xib in Resources */,
 				6BDB8E2E1C99057C00F74190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,14 +402,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE726461C9BB41100E4F78C /* AddressListModel.swift in Sources */,
 				6BB945801C9936CD007E8C09 /* WWChatViewController.swift in Sources */,
 				6BB945781C9934C1007E8C09 /* MainTabBarController.swift in Sources */,
 				6BDB8E291C99057B00F74190 /* AppDelegate.swift in Sources */,
 				6BB945821C99370D007E8C09 /* AddressListViewController.swift in Sources */,
 				6BB9457C1C9935CA007E8C09 /* BaseNavgationController.swift in Sources */,
 				6BB945841C99372B007E8C09 /* FindViewController.swift in Sources */,
+				6BE726481C9BC97D00E4F78C /* searchBarTextFiled.swift in Sources */,
 				6BB945861C993744007E8C09 /* MyViewController.swift in Sources */,
 				6BB9457A1C993593007E8C09 /* BaseViewController.swift in Sources */,
+				6BE726431C9BB3A500E4F78C /* AddressListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

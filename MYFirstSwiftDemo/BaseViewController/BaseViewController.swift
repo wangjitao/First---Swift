@@ -9,7 +9,9 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    var titleStr = NSString()
+    
+    var titleView:UIView?
+    var titleStr:NSString?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +21,9 @@ class BaseViewController: UIViewController {
         let statusBar = UIView()
         statusBar.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 20)
         statusBar.backgroundColor = UIColor.init(white: 0.2, alpha: 1)
-        
-        view.addSubview(titleViewForNavigationItem(titleStr,titleSize: 17, titleColor: UIColor.whiteColor(), titleViewColor: UIColor.init(white: 0.2, alpha: 1)))
         view.addSubview(statusBar)
-
+        
+        titleViewForNavigationItem(titleStr!,titleSize: 17, titleColor: UIColor.whiteColor(), titleViewColor: UIColor.init(white: 0.2, alpha: 1))
         // Do any additional setup after loading the view.
     }
 
@@ -31,25 +32,55 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func titleViewForNavigationItem(title:NSString,titleSize:CGFloat,titleColor:UIColor,titleViewColor:UIColor) -> UILabel {
+    func titleViewForNavigationItem(title:NSString,titleSize:CGFloat,titleColor:UIColor,titleViewColor:UIColor) {
+        titleView = UIView()
+        let titleLabel = UILabel()
+        titleView!.frame = CGRectMake(0, 20, UIScreen.mainScreen().bounds.width, 44)
+
+        titleLabel.frame.size = CGSizeMake(80, 44)
+        var center:CGPoint = titleLabel.center
+        center.x = (titleView?.frame.width)!/2
+        center.y = (titleView?.frame.height)!/2
+        titleLabel.center = center
         
-        let titleView = UILabel()
-        titleView.frame = CGRectMake(0,20, UIScreen.mainScreen().bounds.width, 44)
-        titleView.backgroundColor = titleViewColor
-        titleView.text = title as String
-        titleView.textColor = titleColor
-        titleView.textAlignment = NSTextAlignment.Center
-        titleView.font = UIFont.boldSystemFontOfSize(titleSize)
+        titleLabel.text = title as String
+        titleLabel.textColor = titleColor
+        titleLabel.textAlignment = NSTextAlignment.Center
+        titleLabel.font = UIFont.boldSystemFontOfSize(titleSize)
+        titleView!.backgroundColor = titleViewColor
+        titleView!.userInteractionEnabled = true
+        titleView?.addSubview(titleLabel)
+        view.addSubview(titleView!)
         
-        return titleView
     }
     
+    func leftItemButton(leftItemImgName:NSString) {
+        let button = UIButton(type: .Custom)
+        button.frame = CGRectMake(10, 0, 40, 40)
+        button.setImage(UIImage(named: leftItemImgName as String), forState: .Normal)
+        button.addTarget(self, action: Selector("leftItemButtonOnClick"), forControlEvents: .TouchUpInside)
+        titleView!.addSubview(button)
+    }
+    
+    func rightItemButton(rightItemImgName:NSString)  {
+        let button = UIButton(type: .Custom)
+        button.frame = CGRectMake(UIScreen.mainScreen().bounds.size.width-50, 0, 40, 40)
+        button.setImage(UIImage(named: rightItemImgName as String), forState: .Normal)
+        button.addTarget(self, action: Selector("rightItemButtonOnClick"), forControlEvents: .TouchUpInside)
+        titleView!.addSubview(button)
+    }
+    func leftItemButtonOnClick() {
+        print("左侧按钮~!")
+    }
+    func rightItemButtonOnClick() {
+        print("右侧按钮~!")
+        
+    }
+
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         
        return UIStatusBarStyle.LightContent
     }
-    
-
     
 
     /*
