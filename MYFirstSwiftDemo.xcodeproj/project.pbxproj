@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BB265791C9FDE5400AA7312 /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2656E1C9FDE5400AA7312 /* image0.jpg */; };
+		6BB2657A1C9FDE5400AA7312 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2656F1C9FDE5400AA7312 /* image1.jpg */; };
+		6BB2657B1C9FDE5400AA7312 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265701C9FDE5400AA7312 /* image2.jpg */; };
+		6BB2657C1C9FDE5400AA7312 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265711C9FDE5400AA7312 /* image3.jpg */; };
+		6BB2657D1C9FDE5400AA7312 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265721C9FDE5400AA7312 /* image4.jpg */; };
+		6BB2657E1C9FDE5400AA7312 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265731C9FDE5400AA7312 /* image5.jpg */; };
+		6BB2657F1C9FDE5400AA7312 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265741C9FDE5400AA7312 /* image6.jpg */; };
+		6BB265801C9FDE5400AA7312 /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265751C9FDE5400AA7312 /* image7.jpg */; };
+		6BB265811C9FDE5400AA7312 /* image8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265761C9FDE5400AA7312 /* image8.jpg */; };
+		6BB265821C9FDE5400AA7312 /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265771C9FDE5400AA7312 /* image9.jpg */; };
+		6BB265831C9FDE5400AA7312 /* image10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB265781C9FDE5400AA7312 /* image10.jpg */; };
 		6BB945781C9934C1007E8C09 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB945771C9934C1007E8C09 /* MainTabBarController.swift */; };
 		6BB9457A1C993593007E8C09 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB945791C993593007E8C09 /* BaseViewController.swift */; };
 		6BB9457C1C9935CA007E8C09 /* BaseNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9457B1C9935CA007E8C09 /* BaseNavgationController.swift */; };
@@ -45,6 +56,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BB2656E1C9FDE5400AA7312 /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		6BB2656F1C9FDE5400AA7312 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		6BB265701C9FDE5400AA7312 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		6BB265711C9FDE5400AA7312 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		6BB265721C9FDE5400AA7312 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		6BB265731C9FDE5400AA7312 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		6BB265741C9FDE5400AA7312 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
+		6BB265751C9FDE5400AA7312 /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.jpg; sourceTree = "<group>"; };
+		6BB265761C9FDE5400AA7312 /* image8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpg; sourceTree = "<group>"; };
+		6BB265771C9FDE5400AA7312 /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
+		6BB265781C9FDE5400AA7312 /* image10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image10.jpg; sourceTree = "<group>"; };
 		6BB945771C9934C1007E8C09 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6BB945791C993593007E8C09 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6BB9457B1C9935CA007E8C09 /* BaseNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavgationController.swift; sourceTree = "<group>"; };
@@ -107,6 +129,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6BB2656D1C9FDC0F00AA7312 /* TestImage */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2656E1C9FDE5400AA7312 /* image0.jpg */,
+				6BB2656F1C9FDE5400AA7312 /* image1.jpg */,
+				6BB265701C9FDE5400AA7312 /* image2.jpg */,
+				6BB265711C9FDE5400AA7312 /* image3.jpg */,
+				6BB265721C9FDE5400AA7312 /* image4.jpg */,
+				6BB265731C9FDE5400AA7312 /* image5.jpg */,
+				6BB265741C9FDE5400AA7312 /* image6.jpg */,
+				6BB265751C9FDE5400AA7312 /* image7.jpg */,
+				6BB265761C9FDE5400AA7312 /* image8.jpg */,
+				6BB265771C9FDE5400AA7312 /* image9.jpg */,
+				6BB265781C9FDE5400AA7312 /* image10.jpg */,
+			);
+			path = TestImage;
+			sourceTree = "<group>";
+		};
 		6BDB8E1C1C99057B00F74190 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +172,7 @@
 		6BDB8E271C99057B00F74190 /* MYFirstSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6BB2656D1C9FDC0F00AA7312 /* TestImage */,
 				6BDB8E5A1C99331200F74190 /* TabBarController */,
 				6BDB8E561C99331200F74190 /* BaseViewController */,
 				6BDB8E581C99331200F74190 /* Controllers */,
@@ -341,7 +382,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB265821C9FDE5400AA7312 /* image9.jpg in Resources */,
+				6BB2657F1C9FDE5400AA7312 /* image6.jpg in Resources */,
+				6BB265831C9FDE5400AA7312 /* image10.jpg in Resources */,
+				6BB2657E1C9FDE5400AA7312 /* image5.jpg in Resources */,
+				6BB2657C1C9FDE5400AA7312 /* image3.jpg in Resources */,
+				6BB265791C9FDE5400AA7312 /* image0.jpg in Resources */,
 				6BDB8E331C99057C00F74190 /* LaunchScreen.storyboard in Resources */,
+				6BB2657B1C9FDE5400AA7312 /* image2.jpg in Resources */,
+				6BB2657A1C9FDE5400AA7312 /* image1.jpg in Resources */,
+				6BB2657D1C9FDE5400AA7312 /* image4.jpg in Resources */,
+				6BB265801C9FDE5400AA7312 /* image7.jpg in Resources */,
+				6BB265811C9FDE5400AA7312 /* image8.jpg in Resources */,
 				6BDB8E301C99057C00F74190 /* Assets.xcassets in Resources */,
 				6BE726441C9BB3A500E4F78C /* AddressListCell.xib in Resources */,
 				6BDB8E2E1C99057C00F74190 /* Main.storyboard in Resources */,
