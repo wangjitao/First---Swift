@@ -64,7 +64,7 @@ class AddressListViewController: BaseViewController,UITableViewDataSource,UITabl
     
     func layoutSubViewsForAddressListView() {
         tableView = UITableView()
-        tableView?.frame = CGRectMake(0, 64, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height-64-49)
+        tableView?.frame = CGRectMake(0, kNavigationH, kSCREEN_WIDTH, kSCREEN_HEIGHT - kNavigationH - kTabBarHeight)
         tableView?.delegate = self
         tableView?.dataSource = self
         tableView?.registerNib(UINib(nibName: "AddressListCell", bundle: nil), forCellReuseIdentifier: "AddressListCellId")
@@ -75,7 +75,7 @@ class AddressListViewController: BaseViewController,UITableViewDataSource,UITabl
         searchController?.dimsBackgroundDuringPresentation = true
         searchController?.hidesNavigationBarDuringPresentation = true
         searchController?.searchBar.sizeToFit()
-        searchController?.searchBar.frame = CGRectMake(searchController!.searchBar.frame.origin.x, searchController!.searchBar.frame.origin.y, searchController!.searchBar.frame.size.width, 44.0)
+        searchController?.searchBar.frame = CGRectMake(kViewX(searchController!.searchBar), kViewY(searchController!.searchBar), kViewW(searchController!.searchBar), kNavigationBarH)
         
         searchController?.searchBar.placeholder = "搜索"
         
@@ -138,7 +138,7 @@ class AddressListViewController: BaseViewController,UITableViewDataSource,UITabl
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 50
+        return AdaptedHeightValue(45)
     }
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {

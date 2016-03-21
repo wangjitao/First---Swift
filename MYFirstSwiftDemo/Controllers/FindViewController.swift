@@ -10,7 +10,6 @@ import UIKit
 
 class FindViewController: BaseViewController {
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

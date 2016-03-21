@@ -1,2 +1,4 @@
 
-pod 'SDWebImage'
+use_frameworks!
+
+pod 'SnapKit'
