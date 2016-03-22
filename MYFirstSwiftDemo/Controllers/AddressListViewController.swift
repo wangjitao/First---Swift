@@ -67,7 +67,9 @@ class AddressListViewController: BaseViewController,UITableViewDataSource,UITabl
         tableView?.frame = CGRectMake(0, kNavigationH, kSCREEN_WIDTH, kSCREEN_HEIGHT - kNavigationH - kTabBarHeight)
         tableView?.delegate = self
         tableView?.dataSource = self
-        tableView?.registerNib(UINib(nibName: "AddressListCell", bundle: nil), forCellReuseIdentifier: "AddressListCellId")
+        //tableView?.registerNib(UINib(nibName: "AddressListCell", bundle: nil), forCellReuseIdentifier: "AddressListCellId")
+        tableView?.registerNib(kRegisterNib("AddressListCell"),forCellReuseIdentifier:"AddressListCellId")
+        
         view.addSubview(tableView!)
   
         searchController = UISearchController(searchResultsController: nil)
@@ -91,7 +93,6 @@ class AddressListViewController: BaseViewController,UITableViewDataSource,UITabl
         } else {
             return (dataSource?.count)!
         }
-        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -172,8 +173,8 @@ class AddressListViewController: BaseViewController,UITableViewDataSource,UITabl
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-       
-        tableView?.reloadData()
+        self.viewWillAppear(true)
+        
     }
 
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {

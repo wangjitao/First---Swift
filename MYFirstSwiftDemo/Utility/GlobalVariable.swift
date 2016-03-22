@@ -72,6 +72,7 @@ func kRegisterNib(nibName:String)-> UINib
 
 
 
+
 /****************View******************/
 //RGBA函数
 func kRGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor
